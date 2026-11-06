@@ -26,7 +26,7 @@ Dự án dùng ESP32, cảm biến vân tay AS608, LCD I2C và Google Apps Scrip
 - Buzzer
 - Nút thiết lập và nút tạo danh sách điểm danh
 
-Sơ đồ đấu nối hiện có: `DIEM DANH VAN TAY - GOOGLESHEET.png`.
+Firmware dùng UART2 cho cảm biến (GPIO16/17), buzzer GPIO13 và hai nút GPIO0/15; địa chỉ LCD I2C là `0x27`. Đối chiếu sơ đồ đấu nối của mạch trước khi cấp nguồn.
 
 ## Các file chính
 
@@ -41,8 +41,8 @@ Sơ đồ đấu nối hiện có: `DIEM DANH VAN TAY - GOOGLESHEET.png`.
 | `Code.gs` | Apps Script mới cho lớp, buổi, vắng/trễ, ngày và tuần |
 | `Index.html` | Giao diện quản trị trên cùng link Apps Script |
 | `appsscript.json` | Quyền Apps Script cần cấp cho Sheet, trình kích hoạt và tài khoản chạy |
-| `script_google_sheet.h` | Apps Script cũ; chỉ giữ để tham chiếu |
-| `templates/student_import.csv` | Mẫu nhập danh sách nhiều lớp |
+| `script_google_sheet.h` | Apps Script cũ trên máy phát triển; không đưa lên GitHub vì chứa định danh Sheet riêng tư |
+| `docs/DATA_MODEL.md` | Cấu trúc CSV để tự tạo danh sách nhập; file chứa tên học sinh không đưa lên GitHub |
 
 ## Tài liệu phát triển
 

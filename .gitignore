@@ -1,0 +1,16 @@
+.arduino-build/
+build/
+imports/
+script_google_sheet.h
+templates/student_import.csv
+LCDI2C_Multilingual-main.zip
+DIEM DANH VAN TAY - GOOGLESHEET.png
+arduino-cli-offline.yaml
+*.log
+*.bin
+*.elf
+*.map
+.env
+.env.*
+secrets.*
+!secrets.example.*
